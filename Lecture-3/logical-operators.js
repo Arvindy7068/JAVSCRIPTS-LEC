@@ -44,3 +44,24 @@ let h = 0;
 console.log(h ?? 10);
 console.log('null ?? 10', null ?? 10);
 console.log('undefined ?? 10', undefined ?? 10);
+
+
+// And Operator
+console.log(true && true); //
+console.log(true && false); //
+console.log(false && true); //
+console.log(false && false); //
+
+// AND Operator returns first falsy value:
+console.log('1 && 0 ---> ', 1 && 0); // 0, first falsy valu will be returned
+console.log('1 && 3 ---> ', 1 && 3); // 3, all are truely, then last value will be returned
+console.log('null && 5 ---> ', null && 5); // null, since null is falsy
+console.log('1 && 3 && null && 6 ---> ', 1 && 3 && null && 6); // null
+
+//(NOT) !
+console.log('!true--->', !true); //false
+console.log(!false); //ture
+console.log('!0 --->', !0); //ture
+console.log("!'' ---> ", !''); //ture
+console.log("!!null ---> ", !!null); //false
+
